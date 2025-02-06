@@ -36,6 +36,11 @@
   }
 }
 
+.button-fighting:hover {
+  color: #ffffff;
+  background-color: #763b00;
+}
+
 .button-fairy {
   font-weight: 700;
   color: #920092;
@@ -51,6 +56,11 @@
     width: 1.875rem;
     height: auto;
   }
+}
+
+.button-fairy:hover {
+  color: #ffffff;
+  background-color: #920092;
 }
 
 // card generator
@@ -109,6 +119,11 @@
     height: auto;
     transform: scaleX(-1);
   }
+}
+
+.button-share:hover {
+  color: #ffffff;
+  background-color: #2051bb;
 }
 
 // footer
