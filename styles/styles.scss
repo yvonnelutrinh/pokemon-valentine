@@ -1,3 +1,9 @@
+@use "./partials/global" as *;
+@use "./partials/mixins" as *;
+@use "./partials/resets" as *;
+@use "./partials/typography" as *;
+@use "./partials/variables" as *;
+
 * {
     margin: 0;
     padding: 0;
