@@ -45,6 +45,7 @@ async function fightingData() {
     img.src = imageUrl;
   } else {
     img = document.createElement("img"); //otherwise, create a new image element
+    img.style.width = "100%";
     img.src = imageUrl;
   }
 
@@ -84,6 +85,7 @@ async function fairyData() {
     img.src = imageUrl;
   } else {
     img = document.createElement("img");
+    img.style.width = "100%";
     img.src = imageUrl;
   }
 

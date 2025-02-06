@@ -115,11 +115,16 @@ body {
 .letter__message {
   width: 15rem;
 }
+.letter__names {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .letter__address {
   width: 15rem;
 }
 .letter__pokemon {
-  width: 18rem;
+  width: 100%;
   max-height: 18.75rem;
 }
 
