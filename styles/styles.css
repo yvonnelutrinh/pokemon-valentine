@@ -137,11 +137,7 @@ h2 {
 }
 
 .new-message {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 1rem 1.5rem;
-  gap: 1rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0.5rem;
   background-color: #ffffff;
