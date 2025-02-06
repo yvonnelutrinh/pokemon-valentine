@@ -4,12 +4,6 @@
 @use "./partials/typography" as *;
 @use "./partials/variables" as *;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 // centering main content & margin
 .main-content {
   margin: 4rem 0;
