@@ -10,6 +10,12 @@
   @include flex-column;
   align-items: center;
   gap: 2.5rem;
+
+  h2 {
+    @include flex-column;
+    text-align: center;
+    color: #575757;
+  }
 }
 
 // fighting or fairy type buttons
@@ -96,7 +102,7 @@
 
 .pokemon {
   img {
-    width: 18rem;
+    width: auto;
     max-height: 18.75rem;
   }
 }
