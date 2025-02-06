@@ -26,6 +26,8 @@ async function fightingData() {
     const imageUrl = chosenPokemon.data.sprites.other["official-artwork"].front_default; 
     console.log('Image URL:', imageUrl); 
 
+    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
+
     let element = document.querySelector(".pokemon"); 
 
     let img = element.querySelector('img'); 
@@ -58,6 +60,8 @@ async function fairyData() {
     const chosenPokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randPokemon}`); 
     const imageUrl = chosenPokemon.data.sprites.other["official-artwork"].front_default; 
     console.log('Image URL', imageUrl);
+
+    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
     
     let element = document.querySelector(".pokemon"); 
 
