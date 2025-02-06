@@ -20,3 +20,9 @@ header {
 body {
   background-image: url("/assets/images/hearts-bg.svg");
 }
+
+h2 {
+  @include flex-column;
+  text-align: center;
+  color: #575757;
+}

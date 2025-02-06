@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="./scripts/capture.js" defer></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/index.js" type="module" defer></script>
     <title>Valentines PokéCard Generator App</title>
@@ -14,6 +16,10 @@
       <h1>Valentine's, I Choose You!</h1>
     </header>
     <main class="main-content">
+        <h2>
+            Make a card for your Valentine!<br />
+            Choose a strategy below 👇
+          </h2>
       <!-- fighting or fairy type buttons -->
       <div class="button-container">
         <button type="button" class="button-container__fighting">
@@ -32,7 +38,7 @@
         </button>
       </div>
       <!-- card generator -->
-      <div class="card-generator">
+      <div id="download" class="card-generator">
         <div class="letter">
           <p class="letter__message">You’ll always be my number one!</p>
           <div class="letter_names">
@@ -48,7 +54,7 @@
       </div>
       <!-- share card button -->
       <div class="share">
-        <button type="button" class="share__button">
+        <button type="button" id="download-button" class="share__button">
           <img
             class="share__image"
             src="https://archives.bulbagarden.net/media/upload/2/2e/Spr_5b_279.png"
