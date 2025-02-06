@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: brown;
+    padding: 1.5rem;
+
+    &__logo {
+        width: 10%;
+    }
+}
+
+.hero {
+    background-color: aqua;
+    text-align: center;
+    padding: 3rem;
+}
+
+.type-randomizer {
+    background-color: salmon;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+
+    &__copy {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.footer {
+    background-color: brown;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+
+    &__logo { 
+        width: 10%;
+    }
+}
