@@ -5,57 +5,188 @@
 @use "./partials/variables" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-    background-color: brown;
-    padding: 1.5rem;
+// centering main content & margin
+.main-content {
+  margin: 4rem 0;
+  @include flex-column;
+  align-items: center;
+  gap: 2.5rem;
+}
 
-    &__logo {
-        width: 10%;
+// fighting or fairy type buttons
+
+.button-container {
+  display: flex;
+  gap: 2.5rem;
+
+  &__image {
+    width: 1.875rem;
+    height: auto;
+  }
+
+  &__fighting {
+    font-weight: 700;
+    color: #763b00;
+    padding: 0.5rem 1rem;
+    @include flex-row;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 6.25rem;
+    background-color: #ffecd8;
+    border: none;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #763b00;
     }
-}
+  }
 
-.hero {
-    background-color: aqua;
-    text-align: center;
-    padding: 3rem;
-}
+  &__fairy {
+    font-weight: 700;
+    color: #920092;
+    padding: 0.5rem 1rem;
+    @include flex-row;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 6.25rem;
+    background-color: #ffeaff;
+    border: none;
 
-.type-randomizer {
-    background-color: salmon;
-    text-align: center;
-    padding: 1rem;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-}
-
-.card {
-    display: flex;
-
-    &__copy {
-        background-color: aquamarine;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    &:hover {
+      color: #ffffff;
+      background-color: #920092;
     }
+  }
 }
+
+// card generator
+
+.card-generator {
+  width: 40rem;
+  height: 25rem;
+  padding: 2.5rem;
+  background-color: #cd2f93;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__message {
+    width: 15rem;
+  }
+
+  &__address {
+    width: 15rem;
+  }
+
+  &__pokemon {
+    width: 18rem;
+    max-height: 18.75rem;
+  }
+}
+
+// pokemon new message
+.new-message {
+  @include flex-row;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #575757;
+}
+
+// share card button
+
+.share {
+  &__button {
+    font-weight: 700;
+    color: #2051bb;
+    padding: 0.5rem 1rem;
+    @include flex-row;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 6.25rem;
+    background-color: #e8f3ff;
+    border: none;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #2051bb;
+    }
+  }
+  &__image {
+    width: 1.875rem;
+    height: auto;
+    transform: scaleX(-1);
+  }
+}
+
+// footer
 
 .footer {
-    background-color: brown;
-    padding: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+  @include flex-column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
 
-    &__logo { 
-        width: 10%;
+  &__message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.team {
+  @include flex-row;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__member {
+    @include flex-row;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    font-weight: 700;
+
+    .github {
+      @include flex-row;
+      align-items: center;
+      gap: 0.375rem;
+      font-weight: 400;
     }
+  }
+  &__link {
+    color: #000000;
+    text-decoration: none;
+
+    @include flex-row;
+    align-items: center;
+    gap: 0.375rem;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__logo {
+    width: 1.125rem;
+    height: auto;
+  }
 }

@@ -248,7 +248,7 @@ const fairyGenericJokes = [
     { joke: "Fairy-tale love story!" }
 ];
 
-const cardMessageContainer = document.querySelector(".card__message");
+const cardMessageContainer = document.querySelector(".letter__message");
 
 class JokePrinter {
   // function to pull random string from joke arrays and modify html value
@@ -286,18 +286,18 @@ export { generator }; // import to index.js
 // add event listeners to buttons and call joke generator
 // TODO: move lines below to index.js to clean up code readability
 
-const fighterButton = document.querySelector("#fighterButton");
-const fairyButton = document.querySelector("#fairyButton");
+// const fighterButton = document.querySelector("#fighterButton");
+// const fairyButton = document.querySelector("#fairyButton");
 
-function clickFighterButton() {
-  const newFighterJoke = generator.pullJoke("fighter"); // add variable for name response from api
-  console.log("New fighter joke:", newFighterJoke);
-}
+// function clickFighterButton() {
+//   const newFighterJoke = generator.pullJoke("fighter"); // add variable for name response from api
+//   console.log("New fighter joke:", newFighterJoke);
+// }
 
-function clickFairyButton() {
-  const newFairyJoke = generator.pullJoke("fairy"); // add variable for name response from api
-  console.log("New fairy joke:", newFairyJoke);
-}
+// function clickFairyButton() {
+//   const newFairyJoke = generator.pullJoke("fairy"); // add variable for name response from api
+//   console.log("New fairy joke:", newFairyJoke);
+// }
 
-fighterButton.addEventListener("click", clickFighterButton);
-fairyButton.addEventListener("click", clickFairyButton);
+// fighterButton.addEventListener("click", clickFighterButton);
+// fairyButton.addEventListener("click", clickFairyButton);

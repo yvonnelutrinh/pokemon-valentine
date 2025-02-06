@@ -4,53 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/index.js" type="module" defer></script>
     <title>Valentines PokéCard Generator App</title>
   </head>
   <body>
-    <header class="header">
-      <img
-        class="header__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/538px-International_Pok%C3%A9mon_logo.svg.png"
-        alt="logo"
-      />
+    <header>
+      <img src="/assets/logos/pokeball-icon.svg" alt="pokeball logo" />
+      <h1>Valentine's, I Choose You!</h1>
     </header>
-    <div class="hero">
-      <section class="hero__copy">
-        <h1 class="hero__title">Valentines PokéCard Generator App</h1>
-        <p class="hero__subtitle">Valentine's, I Choose You!</p>
-        <p class="hero__description">Do we need a quick intro?</p>
-      </section>
-      <div class="type-randomizer">
-        <h2 class="type-randomizer__title">Generate a card by type:</h2>
-        <button class="type-randomizer__button" id="fighterButton" type="button">Fighter</button>
-        <button class="type-randomizer__button" id="fairyButton" type="button">Fairy</button>
-      </div>
-    </div>
-    <main class="main">
-      <div class="card">
-        <div class="card__copy">
-          <p class="card__message">Punny message to be inserted here.</p>
-          <div class="card__names">
-            <p>To:</p>
-            <p>From:</p>
-          </div>
-        </div>
-        <div class="card__image">
+    <main class="main-content">
+      <!-- fighting or fairy type buttons -->
+      <div class="button-container">
+        <button type="button" class="button-container__fighting">
           <img
-            src="https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/463291814_8333007106821160_1675840853293739287_n.png?_nc_cat=106&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=SG7ubllQeMcQ7kNvgFTircJ&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=Ak1L-NdIyOgsVWCMQcWlNwu&oh=00_AYAUFyg-jDwU3tEqj8pswOaJIvGDFF6fokLvVDSLWAEFVg&oe=67A9D847"
-            alt="mew valentines illustrations"
-          />
+            class="button-container__image"
+            src="/assets/images/fighting-type.png"
+            alt="pokemon fighting type icon"
+          />Fight for Love
+        </button>
+        <button type="button" class="button-container__fairy">
+          <img
+            class="button-container__image"
+            src="assets/images/fairy-type.png"
+            alt="pokemon fairy type icon"
+          />Let's Be Cute
+        </button>
+      </div>
+      <!-- card generator -->
+      <div class="card-generator">
+        <div class="letter">
+          <p class="letter__message">You’ll always be my number one!</p>
+          <p class="letter__address">To:</p>
+          <p class="letter__address">From:</p>
         </div>
+        <div class="letter__pokemon"></div>
+      </div>
+      <!-- message from pokemon -->
+      <div class="new-message">
+        <p>New message from (pokemon name)!</p>
+      </div>
+      <!-- share card button -->
+      <div class="share">
+        <button type="button" class="share__button">
+          <img
+            class="share__image"
+            src="https://archives.bulbagarden.net/media/upload/2/2e/Spr_5b_279.png"
+            alt="pelipper flying"
+          />Off to Delivery!
+        </button>
       </div>
     </main>
+    <!-- team links -->
     <footer class="footer">
-      <p>Do we need/want a footer?</p>
-      <img
-        class="footer__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/538px-International_Pok%C3%A9mon_logo.svg.png"
-        alt="logo"
-      />
+      <div class="team">
+        <div class="team__member">
+          <p>Jiin</p>
+          <a class="team__link" href="https://github.com/jiinp2">
+            <img
+              class="team__logo"
+              src="/assets/logos/github-mark.svg"
+              alt="github icon"
+            />
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="team__member">
+          <p>Yvonne</p>
+          <a class="team__link" href="https://github.com/yvonnelutrinh">
+            <img
+              class="team__logo"
+              src="/assets/logos/github-mark.svg"
+              alt="github icon"
+            />
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="team__member">
+          <p>Zuya</p>
+          <a
+            class="team__link"
+            href="https://github.com/zuyaabro"
+          >
+            <img
+              class="team__logo"
+              src="/assets/logos/github-mark.svg"
+              alt="github icon"
+            />
+            <p>Github</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer__message">
+        <p>Best of luck!</p>
+        <img
+          src="https://archives.bulbagarden.net/media/upload/8/8f/Trozeiani370.png"
+          alt="lovedisc animated sprite"
+        />
+      </div>
     </footer>
   </body>
 </html>
