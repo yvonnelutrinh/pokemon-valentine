@@ -101,6 +101,18 @@
   }
 }
 
+// pokemon new message
+.new-message {
+  @include flex-row;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #575757;
+}
+
 // share card button
 
 .button-share {
