@@ -58,6 +58,13 @@
   }
 }
 
+.generated-content {
+    display:none;
+    // display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+}
 // card generator
 
 .card-generator {

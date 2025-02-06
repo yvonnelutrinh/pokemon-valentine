@@ -96,6 +96,13 @@ h2 {
   background-color: #920092;
 }
 
+.generated-content {
+  display: none;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
 .card-generator {
   width: 40rem;
   height: 25rem;

@@ -2,6 +2,9 @@ import { generator } from "./jokes.js";
 
 document.querySelectorAll(".button-container").forEach((button) => {
   button.addEventListener("click", (e) => {
+    const generatedContent = document.querySelector(".generated-content");
+    generatedContent.style.display = "flex";
+
     if (e.target.closest(".button-container__fighting")) {
       //alert("fighting");
       fightingData();
@@ -32,8 +35,9 @@ async function fightingData() {
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
     console.log("Image URL:", imageUrl);
-    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
-
+    document.querySelector(".new-message").textContent = `New message from ${
+      randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)
+    }!`;
   }
 
   let element = document.querySelector(".letter__pokemon");
@@ -51,7 +55,7 @@ async function fightingData() {
 
   element.append(img);
   generator.pullJoke("fighter", chosenPokemon.data.name);
-//   console.log(chosenPokemon.data);
+  //   console.log(chosenPokemon.data);
 }
 
 async function fairyData() {
@@ -74,8 +78,9 @@ async function fairyData() {
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
     console.log("Image URL", imageUrl);
-    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
-
+    document.querySelector(".new-message").textContent = `New message from ${
+      randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)
+    }!`;
   }
 
   let element = document.querySelector(".letter__pokemon");
@@ -92,5 +97,5 @@ async function fairyData() {
   element.append(img);
 
   generator.pullJoke("fairy", chosenPokemon.data.name);
-//   console.log(chosenPokemon.data);
+  //   console.log(chosenPokemon.data);
 }
