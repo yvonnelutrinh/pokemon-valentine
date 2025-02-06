@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/index.js" defer></script>
     <title>Document</title>
   </head>
@@ -15,13 +16,13 @@
     <main class="main-content">
       <!-- fighting or fairy type buttons -->
       <div class="button-container">
-        <button class="button-fighting">
+        <button type="button" class="button-fighting">
           <img
             src="/assets/images/fighting-type.png"
             alt="pokemon fighting type icon"
           />Fight for Love
         </button>
-        <button class="button-fairy">
+        <button type="button" class="button-fairy">
           <img
             src="/assets/images/fairy-type.png"
             alt="pokemon fairy type icon"
@@ -34,12 +35,10 @@
           <p class="letter__message">You’ll always be my number one!</p>
           <p class="letter__address">To:<br />From:</p>
         </div>
-        <div class="pokemon">
-          <img src="/assets/images/pokemon-placeholder.svg" alt="pokemon" />
-        </div>
+        <div class="pokemon"></div>
       </section>
       <!-- share card button -->
-      <button class="button-share">
+      <button type="button" class="button-share">
         <img
           src="https://archives.bulbagarden.net/media/upload/2/2e/Spr_5b_279.png"
           alt="pelipper flying"
