@@ -32,6 +32,8 @@ async function fightingData() {
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
     console.log("Image URL:", imageUrl);
+    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
+
   }
 
   let element = document.querySelector(".letter__pokemon");
@@ -71,6 +73,8 @@ async function fairyData() {
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
     console.log("Image URL", imageUrl);
+    document.querySelector(".new-message").textContent = `New message from ${randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)}!`;
+
   }
 
   let element = document.querySelector(".letter__pokemon");
