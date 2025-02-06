@@ -4,6 +4,10 @@
 @use "./partials/typography" as *;
 @use "./partials/variables" as *;
 
+.hidden {
+  display: none;
+}
+
 // centering main content & margin
 .main-content {
   margin: 4rem 0;

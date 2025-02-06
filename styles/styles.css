@@ -40,6 +40,10 @@ body {
   background-image: url("/assets/images/hearts-bg.svg");
 }
 
+.hidden {
+  display: none;
+}
+
 .main-content {
   margin: 4rem 0;
   display: flex;
