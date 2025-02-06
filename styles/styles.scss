@@ -7,7 +7,7 @@
 // nav & body background
 nav {
   padding: 1.5rem 2.5rem;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,19 +23,107 @@ body {
   background-image: url("/assets/images/hearts-bg.svg");
 }
 
+// centering main content & margin
+.main-content {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
 // fighting or fairy type buttons
+
+.button-container {
+  display: flex;
+  gap: 2.5rem;
+}
 
 .button-fighting {
   font-weight: 700;
+  color: #763b00;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
-  border-radius: 50%;
+  border-radius: 6.25rem;
+  background-color: #ffecd8;
+  border: none;
 
   img {
     width: 1.875rem;
     height: auto;
+  }
+}
+
+.button-fairy {
+  font-weight: 700;
+  color: #920092;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6.25rem;
+  background-color: #ffeaff;
+  border: none;
+
+  img {
+    width: 1.875rem;
+    height: auto;
+  }
+}
+
+// share card button
+
+.button-share {
+  font-weight: 700;
+  color: #2051bb;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6.25rem;
+  background-color: #e8f3ff;
+  border: none;
+
+  img {
+    width: 1.875rem;
+    height: auto;
+    transform: scaleX(-1);
+  }
+}
+
+// footer
+
+.team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+
+    img {
+      width: 1.125rem;
+      height: auto;
+    }
+
+    .spacing {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.25rem;
+    }
   }
 }
