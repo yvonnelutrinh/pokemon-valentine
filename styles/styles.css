@@ -22,4 +22,34 @@
   src: url("/assets/fonts/NunitoSans-Bold.woff2") format("woff2"), url("/assets/fonts/alternative-fonts/NunitoSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+}
+nav {
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav img {
+  width: auto;
+  height: 2rem;
+}
+
+body {
+  background-image: url("/assets/images/hearts-bg.svg");
+}
+
+.button-fighting {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 50%;
+}
+.button-fighting img {
+  width: 1.875rem;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
