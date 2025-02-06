@@ -87,6 +87,30 @@ body {
   height: auto;
 }
 
+.card-generator {
+  width: 40rem;
+  height: 25rem;
+  padding: 2.5rem;
+  background-color: #dd53aa;
+  display: flex;
+}
+.card-generator p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.card-generator .letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-generator .letter__message {
+  width: 15rem;
+}
+.card-generator .letter__address {
+  width: 15rem;
+}
+
 .button-share {
   font-weight: 700;
   color: #2051bb;
@@ -110,6 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 4rem;
 }
 .footer-container__message {
   display: flex;

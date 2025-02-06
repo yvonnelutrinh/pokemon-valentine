@@ -2,3 +2,21 @@
 @use "./resets" as *;
 @use "./typography" as *;
 @use "./variables" as *;
+
+// nav & body background
+nav {
+  padding: 1.5rem 2.5rem;
+  background-color: #ffffff;
+  @include flex-row;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    width: auto;
+    height: 2rem;
+  }
+}
+
+body {
+  background-image: url("/assets/images/hearts-bg.svg");
+}
