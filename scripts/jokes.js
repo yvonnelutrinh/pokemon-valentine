@@ -1,13 +1,17 @@
 // arrays for fighter jokes, fairy jokes, and generic jokes if name isnt specified
 
 export const fighterJokes = {
-  mankey: { joke: "You make my heart go bananas - will you be my primate valentine?" },
+  mankey: {
+    joke: "You make my heart go bananas - will you be my primate valentine?",
+  },
   primeape: { joke: "I'm APE-solutely crazy about you!" },
   poliwrath: { joke: "Let's FIGHT for love together!" },
   machop: { joke: "I'll MUSCLE my way into your heart!" },
   machoke: { joke: "You're STRONG enough to lift my spirits!" },
   machamp: { joke: "Four arms, infinite love for you!" },
-  hitmonlee: { joke: "I'd KICK myself if I didn't ask you to be my valentine!" },
+  hitmonlee: {
+    joke: "I'd KICK myself if I didn't ask you to be my valentine!",
+  },
   hitmonchan: { joke: "PUNCH-ing above my weight in love with you!" },
   heracross: { joke: "You’ve bugged my heart!" },
   tyrogue: { joke: "Training my heart to love you!" },
@@ -40,7 +44,10 @@ export const fighterJokes = {
   cobalion: { joke: "Noble love, just for you!" },
   terrakion: { joke: "ROCK-solid valentine!" },
   virizion: { joke: "GREEN with love for you!" },
-  "keldeo-ordinary": { joke: "Your love’s the critical hit to my heart!", prettyName: "Keldeo" },
+  "keldeo-ordinary": {
+    joke: "Your love’s the critical hit to my heart!",
+    prettyName: "Keldeo",
+  },
   chesnaught: { joke: "Tough shell, soft love!" },
   pancham: { joke: "PANDAMONIUM of love!" },
   pangoro: { joke: "Tough love, panda style!" },
@@ -61,34 +68,132 @@ export const fighterJokes = {
   falinks: { joke: "ALIGNED in love!" },
   zamazenta: { joke: "SHIELD-ing you with my love!" },
   kubfu: { joke: "KUB-ootiful valentine!" },
-  "urshifu-single-strike": { joke: "SINGLE and striking with love!", prettyName: "Urshifu" },
+  "urshifu-single-strike": {
+    joke: "SINGLE and striking with love!",
+    prettyName: "Urshifu",
+  },
   sneasler: { joke: "SNEAKY valentine!" },
   quaquaval: { joke: "DANCING into your heart!" },
   pawmo: { joke: "PAW-some valentine!" },
   pawmot: { joke: "Electri-CUTE love!" },
   flamigo: { joke: "FLAMIN' hot valentine!" },
   annihilape: { joke: "APE-ocalyptic love!" },
-  "great-tusk": { joke: "TUSK-ing you to be my valentine!", prettyName: "Great Tusk" },
-  "slither-wing": { joke: "WING-ing my way to your heart!", prettyName: "Slither Wing" },
-  "iron-hands": { joke: "HAND-le my heart with care!", prettyName: "Iron Hands" },
-  "iron-valiant": { joke: "Valiant love, steel-strong!", prettyName: "Iron Valiant" },
+  "great-tusk": {
+    joke: "TUSK-ing you to be my valentine!",
+    prettyName: "Great Tusk",
+  },
+  "slither-wing": {
+    joke: "WING-ing my way to your heart!",
+    prettyName: "Slither Wing",
+  },
+  "iron-hands": {
+    joke: "HAND-le my heart with care!",
+    prettyName: "Iron Hands",
+  },
+  "iron-valiant": {
+    joke: "Valiant love, steel-strong!",
+    prettyName: "Iron Valiant",
+  },
   koraidon: { joke: "RACE-ing to be your valentine!" },
   okidogi: { joke: "DOG-gone in love with you!" },
-  "meloetta-pirouette": { joke: "DANCE-ing into your heart!", prettyName: "Meloetta" },
+  "meloetta-pirouette": {
+    joke: "DANCE-ing into your heart!",
+    prettyName: "Meloetta",
+  },
   "keldeo-resolute": { joke: "RESOLUTE in my love!", prettyName: "Keldeo" },
-  "mewtwo-mega-x": { joke: "Psychic powers < our connection!", prettyName: "Mewtwo" },
+  "mewtwo-mega-x": {
+    joke: "Psychic powers < our connection!",
+    prettyName: "Mewtwo",
+  },
   "heracross-mega": { joke: "MEGA-horn of love!", prettyName: "Heracross" },
-  "blaziken-mega": { joke: "Your flaming kicks spark my love!", prettyName: "Blaziken" },
-  "medicham-mega": { joke: "Even my third eye can see we’re perfect together!", prettyName: "Medicham" },
-  "lucario-mega": { joke: "You've detected my affection!", prettyName: "Lucario" },
-  "gallade-mega": { joke: "Your blade arms cut straight to my heart!", prettyName: "Gallade" },
-  "lopunny-mega": { joke: "Bounce with me into forever!", prettyName: "Lopunny" },
+  "blaziken-mega": {
+    joke: "Your flaming kicks spark my love!",
+    prettyName: "Blaziken",
+  },
+  "medicham-mega": {
+    joke: "Even my third eye can see we’re perfect together!",
+    prettyName: "Medicham",
+  },
+  "lucario-mega": {
+    joke: "You've detected my affection!",
+    prettyName: "Lucario",
+  },
+  "gallade-mega": {
+    joke: "Your blade arms cut straight to my heart!",
+    prettyName: "Gallade",
+  },
+  "lopunny-mega": {
+    joke: "Bounce with me into forever!",
+    prettyName: "Lopunny",
+  },
   "kommo-o-totem": { joke: "TOTEM-ally in love!", prettyName: "Totem Kommo-o" },
-  "farfetchd-galar": { joke: "I’d leek you to know you’re my favorite!", prettyName: "Farfetch'd" },
+  "farfetchd-galar": {
+    joke: "I’d leek you to know you’re my favorite!",
+    prettyName: "Farfetch'd",
+  },
   "zapdos-galar": { joke: "You’re shocking-ly perfect!", prettyName: "Zapdos" },
-  "zamazenta-crowned": { joke: "You’re my shield-mate forever!", prettyName: "Zamazenta" },
-  "urshifu-rapid-strike": { joke: "Let’s strike up some love!", prettyName: "Urshifu" },
-  "machamp-gmax": { joke: "Four arms + one heart = ∞ love!", prettyName: "Machamp" }
+  "zamazenta-crowned": {
+    joke: "You’re my shield-mate forever!",
+    prettyName: "Zamazenta",
+  },
+  "urshifu-rapid-strike": {
+    joke: "Let’s strike up some love!",
+    prettyName: "Urshifu",
+  },
+  "machamp-gmax": {
+    joke: "Four arms + one heart = ∞ love!",
+    prettyName: "Machamp",
+  },
+  "urshifu-single-strike-gmax": {
+    joke: "One strike, and you’ve captured my heart!",
+  },
+  "urshifu-rapid-strike-gmax": {
+    joke: "Flow like water into my arms!",
+    prettyName: "Urshifu",
+  },
+  "sneasel-hisui": {
+    joke: "Your red claws caught my heart!",
+    prettyName: "Sneasel",
+  },
+
+  "lilligant-hisui": {
+    joke: "You make my heart bloom!",
+    prettyName: "Lilligant",
+  },
+
+  "decidueye-hisui": {
+    joke: "You’ve bullseye-d my heart!",
+    prettyName: "Decidueye",
+  },
+
+  "tauros-paldea-combat-breed": {
+    joke: "CHARGE into my heart!",
+    prettyName: "Tauros",
+  },
+  "tauros-paldea-blaze-breed": {
+    joke: "BLAZING with passion!",
+    prettyName: "Tauros",
+  },
+  "tauros-paldea-aqua-breed": {
+    joke: "You make my heart splash!",
+    prettyName: "Tauros",
+  },
+  "koraidon-limited-build": {
+    joke: "Standing strong in my heart!",
+    prettyName: "Koraidon",
+  },
+  "koraidon-sprinting-build": {
+    joke: "Race with me forever!",
+    prettyName: "Koraidon",
+  },
+  "koraidon-swimming-build": {
+    joke: "Dive deep into my love!",
+    prettyName: "Koraidon",
+  },
+  "koraidon-gliding-build": {
+    joke: "Soar through my dreams!",
+    prettyName: "Koraidon",
+  },
 };
 
 export const fairyJokes = {
