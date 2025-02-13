@@ -1,4 +1,4 @@
-import { generator } from "./jokes.js";
+import { generator, fighterJokes, fairyJokes } from "./jokes.js";
 
 document.querySelectorAll(".button-container").forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -24,21 +24,28 @@ async function fightingData() {
 
   let imageUrl;
   let chosenPokemon;
+  let fighterJoke;
 
-  while (!imageUrl) {
+  while (!imageUrl || !fighterJoke) {
     const randPokemon = names[Math.floor(Math.random() * names.length)];
-    console.log("Random Fighting Pokemon:", randPokemon);
+    // console.log("Random Fighting Pokemon:", randPokemon);
 
     chosenPokemon = await axios.get(
       `https://pokeapi.co/api/v2/pokemon/${randPokemon}`
     );
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
-    console.log("Image URL:", imageUrl);
-    document.querySelector(".new-message").textContent = `New message from ${
-      randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)
-    }!`;
+    fighterJoke = fighterJokes[randPokemon];
+    // console.log("Image URL:", imageUrl);
+    // console.log(fighterJoke);
   }
+  // console.log(chosenPokemon.data.name);
+  document.querySelector(".new-message").textContent = `New message from ${
+    "prettyName" in fighterJokes[chosenPokemon.data.name]
+      ? fighterJokes[chosenPokemon.data.name].prettyName
+      : chosenPokemon.data.name.charAt(0).toUpperCase() +
+        chosenPokemon.data.name.slice(1)
+  }!`;
 
   let element = document.querySelector(".letter__pokemon");
   let img = element.querySelector("img");
@@ -67,21 +74,28 @@ async function fairyData() {
 
   let imageUrl;
   let chosenPokemon;
+  let fairyJoke;
 
-  while (!imageUrl) {
+  while (!imageUrl || !fairyJoke) {
     const randPokemon = names[Math.floor(Math.random() * names.length)];
-    console.log("Random Fairy Pokemon:", randPokemon);
+    // console.log("Random Fairy Pokemon:", randPokemon);
 
     chosenPokemon = await axios.get(
       `https://pokeapi.co/api/v2/pokemon/${randPokemon}`
     );
     imageUrl =
       chosenPokemon.data.sprites.other["official-artwork"].front_default;
-    console.log("Image URL", imageUrl);
-    document.querySelector(".new-message").textContent = `New message from ${
-      randPokemon.charAt(0).toUpperCase() + randPokemon.slice(1)
-    }!`;
+    fairyJoke = fairyJokes[randPokemon];
+    console.log("Image URL:", imageUrl);
+    console.log(fairyJoke);
   }
+  console.log(chosenPokemon.data.name);
+  document.querySelector(".new-message").textContent = `New message from ${
+    "prettyName" in fairyJokes[chosenPokemon.data.name]
+      ? fairyJokes[chosenPokemon.data.name].prettyName
+      : chosenPokemon.data.name.charAt(0).toUpperCase() +
+        chosenPokemon.data.name.slice(1)
+  }!`;
 
   let element = document.querySelector(".letter__pokemon");
   let img = element.querySelector("img");
