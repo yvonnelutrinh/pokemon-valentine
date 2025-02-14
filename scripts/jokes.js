@@ -1,4 +1,4 @@
-// arrays for fighter jokes, fairy jokes, and generic jokes if name isnt specified
+// objects for fighter jokes, fairy jokes, and generic jokes if name isnt specified
 
 export const fighterJokes = {
   mankey: {

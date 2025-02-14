@@ -47,7 +47,7 @@ async function fightingData() {
         chosenPokemon.data.name.slice(1)
   }!`;
 
-  let element = document.querySelector(".letter__pokemon");
+  let element = document.querySelector(".card-generator__image-wrapper");
   let img = element.querySelector("img");
 
   if (img) {
@@ -56,7 +56,7 @@ async function fightingData() {
     img.src = imageUrl;
   } else {
     img = document.createElement("img"); //otherwise, create a new image element
-    img.style.width = "100%";
+    img.className = "card-generator__pokemon";
     img.src = imageUrl;
   }
 
@@ -97,14 +97,14 @@ async function fairyData() {
         chosenPokemon.data.name.slice(1)
   }!`;
 
-  let element = document.querySelector(".letter__pokemon");
+  let element = document.querySelector(".card-generator__image-wrapper");
   let img = element.querySelector("img");
 
   if (img) {
     img.src = imageUrl;
   } else {
     img = document.createElement("img");
-    img.style.width = "100%";
+    img.className = "card-generator__pokemon";
     img.src = imageUrl;
   }
 

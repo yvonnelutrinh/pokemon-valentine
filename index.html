@@ -11,15 +11,13 @@
     <title>Valentines PokéCard Generator App</title>
   </head>
   <body>
-    <header>
-      <img src="/assets/logos/pokeball-icon.svg" alt="pokeball logo" />
-      <h1>Valentine's, I Choose You!</h1>
+    <header class="header">
+      <img class="header__img" src="/assets/logos/pokeball-icon.svg" alt="pokeball logo" />
+      <h1 class="header__title">Valentine's, I Choose You!</h1>
     </header>
     <main class="main-content">
-      <h2>
-        Make a card for your Valentine!<br />
-        Choose a strategy below 👇
-      </h2>
+      <h2>Make a card for your Valentine!</h2>
+        <p class="main-content__subtitle">Choose a strategy below 👇</p>
       <!-- fighting or fairy type buttons -->
       <div class="button-container">
         <button type="button" class="button-container__fighting">
@@ -42,12 +40,12 @@
         <div id="download" class="card-generator">
           <div class="letter">
             <p class="letter__message">You’ll always be my number one!</p>
-            <div class="letter_names">
+            <div class="letter__names">
               <p class="letter__address">To:</p>
               <p class="letter__address">From:</p>
             </div>
           </div>
-          <div class="letter__pokemon"></div>
+          <div class="card-generator__image-wrapper"></div>
         </div>
         <!-- message from pokemon -->
         <div class="new-message">
@@ -70,35 +68,35 @@
       <div class="team">
         <a class="team__link" href="https://github.com/jiinp2">
         <div class="team__member">
-          <p>Jiin</p>
+          <p class="team__name">Jiin</p>
             <img
               class="team__logo"
               src="/assets/logos/github-mark.svg"
               alt="github icon"
             />
-            <p>Github</p>
+            <p class="team__github">Github</p>
         </div>
         </a>
         <a class="team__link" href="https://github.com/yvonnelutrinh">
         <div class="team__member">
-          <p>Yvonne</p>
+          <p class="team__name">Yvonne</p>
             <img
               class="team__logo"
               src="/assets/logos/github-mark.svg"
               alt="github icon"
             />
-            <p>Github</p>
+            <p class="team__github">Github</p>
         </div>
         </a>
         <a class="team__link" href="https://github.com/zuyaabro">
           <div class="team__member">
-            <p>Zuya</p>
+            <p class="team__name">Zuya</p>
             <img
               class="team__logo"
               src="/assets/logos/github-mark.svg"
               alt="github icon"
             />
-            <p>Github</p>
+            <p class="team__github">Github</p>
           </div>
         </a>
       </div>
