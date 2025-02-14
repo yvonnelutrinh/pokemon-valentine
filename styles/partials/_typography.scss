@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 @font-face {
-  font-family: "nunitosans";
+  font-family: "NunitoSans";
   src: url("../assets/fonts/nunitosans-regular.woff2") format("woff2"),
     url("../assets/fonts/alternative-fonts/nunitosans-regular.woff")
       format("woff");
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: "nunitosans";
+  font-family: "NunitoSans";
   src: url("../assets/fonts/nunitosans-medium.woff2") format("woff2"),
     url("../assets/fonts/alternative-fonts/nunitosans-medium.woff") format("woff");
 
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "nunitosans";
+  font-family: "NunitoSans";
   src: url("../assets/fonts/nunitosans-bold.woff2") format("woff2"),
     url("../assets/fonts/alternative-fonts/nunitosans-bold.woff") format("woff");
 
