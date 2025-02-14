@@ -280,7 +280,7 @@ h2 {
     font-size: 0.8125rem;
 
     @include tablet {
-      font-size: auto;
+      font-size: 1rem;
     }
   }
 
@@ -304,7 +304,7 @@ h2 {
   }
 
   &__github {
-    font-size: xx-small;
+    font-size: .5625rem;
 
     @include tablet {
       font-size: inherit;
