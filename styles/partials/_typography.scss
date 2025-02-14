@@ -1,29 +1,31 @@
 @use "./variables" as *;
 
-@font-face {
-  font-family: "NunitoSans";
-  src: url("/../assets/fonts/nunitosans-regular.woff2") format("woff2"),
-    url("/../assets/fonts/alternative-fonts/nunitosans-regular.woff")
-      format("woff");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700&display=swap"); // import using Google Fonts as workaround for GitHub pages font issues
 
-  font-weight: 400;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "NunitoSans";
+//   src: url("/../assets/fonts/nunitosans-regular.woff2") format("woff2"),
+//     url("/../assets/fonts/alternative-fonts/nunitosans-regular.woff")
+//       format("woff");
 
-@font-face {
-  font-family: "NunitoSans";
-  src: url("/../assets/fonts/nunitosans-medium.woff2") format("woff2"),
-    url("/../assets/fonts/alternative-fonts/nunitosans-medium.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+// }
 
-  font-weight: 500;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "NunitoSans";
+//   src: url("/../assets/fonts/nunitosans-medium.woff2") format("woff2"),
+//     url("/../assets/fonts/alternative-fonts/nunitosans-medium.woff") format("woff");
 
-@font-face {
-  font-family: "NunitoSans";
-  src: url("/../assets/fonts/nunitosans-bold.woff2") format("woff2"),
-    url("/../assets/fonts/alternative-fonts/nunitosans-bold.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+// }
 
-  font-weight: 700;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "NunitoSans";
+//   src: url("/../assets/fonts/nunitosans-bold.woff2") format("woff2"),
+//     url("/../assets/fonts/alternative-fonts/nunitosans-bold.woff") format("woff");
+
+//   font-weight: 700;
+//   font-style: normal;
+// }
